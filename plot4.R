@@ -15,7 +15,7 @@ png(filename = "plot4.png")
 par(mfcol = c(2,2))
 
 ### construct plot 1
-with(h, plot(dt, Global_active_power, xlab = " ", ylab = "Global Active Power (kilowatts)", type = "n"))
+with(h, plot(dt, Global_active_power, xlab = " ", ylab = "Global Active Power", type = "n"))
 lines(h$dt, h$Global_active_power)
 
 ### construct plot 2
@@ -30,7 +30,7 @@ with(h, plot(dt, Voltage, xlab = "datetime", ylab = "Voltage", type = "n"))
 lines(h$dt, h$Voltage)
 
 ### construct plot 4
-with(h, plot(dt, Global_reactive_power, xlab = "datetime", ylab = "Golabl ", type = "n"))
+with(h, plot(dt, Global_reactive_power, xlab = "datetime", ylab = "Global_reactive_power ", type = "n"))
 lines(h$dt, h$Global_reactive_power)
 
 dev.off()
